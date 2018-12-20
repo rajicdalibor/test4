@@ -44,5 +44,4 @@ jobs:
           attributes: "-CgroupId=org -CartifactId=foo -Cversion=1.0 -Aextension=jar"
           username: "jenkins"
           password: "qqNr3sc5"
-          repository: "testRepo"
           serverurl: "https://jenkins-linode.3ap.ch/nexus/repository/testRepo/"
