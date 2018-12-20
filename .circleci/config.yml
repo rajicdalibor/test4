@@ -41,8 +41,8 @@ jobs:
 
       - nexus-orb/publish:
           filename: "target/demo-java-spring-0.0.1-RELEASE.jar"
-          attributes: "-CgroupId=com.circleci -CartifactId=demo-java-spring -Cversion=0.3.5 -Aextension=jar"
+          attributes: "-CgroupId=org -CartifactId=foo -Cversion=1.0 -Aextension=jar"
           username: "jenkins"
           password: "qqNr3sc5"
-          repository: "maven-releases"
-          serverurl: "https://jenkins-linode.3ap.ch/nexus/repository/maven-public/"
+          repository: "testRepo"
+          serverurl: "https://jenkins-linode.3ap.ch/nexus/"
