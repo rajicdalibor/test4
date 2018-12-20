@@ -45,4 +45,4 @@ jobs:
           username: "jenkins"
           password: "qqNr3sc5"
           repository: "maven-releases"
-          serverurl: "https://jenkins-linode.3ap.ch/nexus/repository/maven-public"
+          serverurl: "https://jenkins-linode.3ap.ch/nexus/repository/maven-public/"
