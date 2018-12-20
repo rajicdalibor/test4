@@ -41,7 +41,7 @@ jobs:
       - nexus-orb/publish:
           filename: "target/demo-java-spring-0.0.1-SNAPSHOT.jar"
           attributes: "-CgroupId=com.circleci -CartifactId=demo-java-spring -Cversion=0.0.1-SNAPSHOT -Aextension=jar"
-          username: "${NEXUS_RM_USERNAME}"
+          username: "jenkins11"
           password: "${NEXUS_RM_PASSWORD}"
           repository: "testSnapshot"
           serverurl: "https://jenkins-linode.3ap.ch/nexus/"
