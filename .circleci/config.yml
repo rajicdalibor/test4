@@ -43,5 +43,5 @@ jobs:
           attributes: "-CgroupId=com.circleci -CartifactId=demo-java-spring -Cversion=0.0.1-RELEASE -Aextension=jar"
           username: "jenkins"
           password: "qqNr3sc5"
-          repository: "testRepo"
+          repository: "Testing"
           serverurl: "https://jenkins-linode.3ap.ch/nexus/"
