@@ -36,12 +36,15 @@ jobs:
       
       - store_artifacts:
           path: target/demo-java-spring-0.0.1-RELEASE.jar
-      
-      - nexus-orb/install
 
-      - nexus-orb/publish:
-          filename: "target/demo-java-spring-0.0.1-RELEASE.jar"
-          attributes: "-CgroupId=org -CartifactId=foo -Cversion=1.0 -Aextension=jar"
-          username: "jenkins"
-          password: "qqNr3sc5"
-          serverurl: "https://jenkins-linode.3ap.ch/nexus/repository/testRepo/"
+      - run: curl -v -u jenkins:qqNr3sc5 --upload-file target/demo-java-spring-0.0.1-RELEASE.jar https://jenkins-linode.3ap.ch/nexus/repository/testRepo/org/foo/1.0/foo-1.0.jar
+
+#
+#      - nexus-orb/install
+#
+#      - nexus-orb/publish:
+#          filename: "target/demo-java-spring-0.0.1-RELEASE.jar"
+#          attributes: "-CgroupId=org -CartifactId=foo -Cversion=1.0 -Aextension=jar"
+#          username: "jenkins"
+#          password: "qqNr3sc5"
+#          serverurl: "https://jenkins-linode.3ap.ch/nexus/repository/testRepo/"
