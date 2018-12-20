@@ -44,4 +44,4 @@ jobs:
           username: "jenkins"
           password: "qqNr3sc5"
           repository: "testSnapshot"
-          serverurl: "https://jenkins-linode.3ap.ch/nexus/"
+          serverurl: "https://jenkins-linode.3ap.ch/nexus"
