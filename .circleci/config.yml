@@ -44,4 +44,4 @@ jobs:
           username: "${NEXUS_RM_USERNAME}"
           password: "${NEXUS_RM_PASSWORD}"
           repository: "testSnapshot"
-          serverurl: "https://jenkins-linode.3ap.ch/nexus/repository/testSnapshot/"
+          serverurl: "https://jenkins-linode.3ap.ch/nexus/"
