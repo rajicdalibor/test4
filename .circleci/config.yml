@@ -37,7 +37,7 @@ jobs:
       - store_artifacts:
           path: target/demo-java-spring-0.0.1-RELEASE.jar
 
-      - run: curl -v -u "${NEXUS_RM_USERNAME}":"${NEXUS_RM_PASSWORD}" --upload-file target/demo-java-spring-0.0.1-RELEASE.jar "${NEXUS_RM_SERVERURL}"testRepo/ch.aaap/config-server/0.0.4/config-server-0.0.4-RELEASE.jar
+      - run: curl -v -u "${NEXUS_RM_USERNAME}":"${NEXUS_RM_PASSWORD}" --upload-file target/demo-java-spring-0.0.1-RELEASE.jar "${NEXUS_RM_SERVERURL}"testRepo/ch.aaap/config-server/0.0.5/config-server-0.0.5-RELEASE.jar
 
 #
 #      - nexus-orb/install
